@@ -39,8 +39,8 @@ let coordinates = [{
   'flag':'finland.png',
   'lat':60.1699,
   'lng':24.9384,
-  'president_ru':'Vladimir Putin',
-  'president_us':'George W. Bush',
+  'president_ru':'Boris Yeltsin',
+  'president_us':'Bill Clinton',
   'year':'1997'
 },{
   'city':'Ljubljana',
@@ -50,8 +50,8 @@ let coordinates = [{
   'flag':'slovenia.png',
   'lat':46.0569,
   'lng':14.5058,
-  'president_ru':'Boris Yeltsin',
-  'president_us':'Bill Clinton',
+  'president_ru':'Vladimir Putin',
+  'president_us':'George W. Bush',
   'year':'2001'
 },{
   'city':'Bratislava',
