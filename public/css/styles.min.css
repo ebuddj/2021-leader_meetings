@@ -53,24 +53,24 @@ body {
   font-size: 16px;
   text-align: center;
   font-weight: 600;
-  line-height: 26px;
   text-shadow: 2px 2px 2px #fff;
 }
 .plus___DWTpR .map_container___22zRx svg g foreignObject div.location___IJo0K {
-  font-size: 24px;
+  font-size: 40px;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 .plus___DWTpR .map_container___22zRx svg g foreignObject div.location___IJo0K img {
-  height: 18px;
+  height: 32px;
   vertical-align: -1px;
 }
 .plus___DWTpR .map_container___22zRx svg g foreignObject div.meta___3gcNx {
-  font-size: 20px;
+  font-size: 30px;
 }
 .plus___DWTpR .map_container___22zRx svg g foreignObject div.meta___3gcNx img {
-  height: 13px;
+  height: 20px;
   vertical-align: -1px;
-  width: 25px;
+  width: 38px;
 }
 .plus___DWTpR .clearfix___1yHqr {
   zoom: 1;
