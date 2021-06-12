@@ -216,6 +216,9 @@ class App extends Component {
           .attr('cy', (d) => {
             return projection([d.lng, d.lat])[1];
           })
+          .attr('r', (d) => {
+            return (d.country === coordinates[this.state.id].country) ? 10 : 6
+          })
           .attr('fill', (d) => {
             return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#999' 
           })
@@ -231,7 +234,7 @@ class App extends Component {
   showLocationMeta() {
     g.selectAll('foreignObject')
       .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 200)
-      .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 10)
+      .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 13)
       .html('<div class="' + style.location + '">' + coordinates[this.state.id].date2 + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
   }
   render() {
