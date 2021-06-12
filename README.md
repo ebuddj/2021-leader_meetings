@@ -4,6 +4,7 @@
 
 ## Russia–United States summits (EBU)
 
+A map showing the Russia–United States summits held from 1991 to present.
 
 **Sources**
 * [Wikipedia](https://en.wikipedia.org/wiki/List_of_Russia%E2%80%93United_States_summits)
