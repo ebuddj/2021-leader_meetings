@@ -48,41 +48,29 @@ body {
   stroke-width: 0.5px;
   stroke: #999;
 }
-.plus___DWTpR .map_container___22zRx svg g text {
+.plus___DWTpR .map_container___22zRx svg g foreignObject div {
   font-family: 'Roboto';
   font-size: 16px;
+  text-align: center;
   font-weight: 600;
+  line-height: 26px;
   text-shadow: 2px 2px 2px #fff;
 }
-.plus___DWTpR .meta_container___3p0xG {
-  margin: auto auto;
-  text-align: left;
-  font-family: 'Roboto';
-  font-size: 24px;
-  margin-top: -95px;
-  z-index: 9999;
-  padding-left: 36%;
+.plus___DWTpR .map_container___22zRx svg g foreignObject div.location___IJo0K {
+  font-size: 20px;
+  text-transform: uppercase;
 }
-.plus___DWTpR .meta_container___3p0xG .name___3S6H7 {
-  color: #000;
-  font-weight: 500;
+.plus___DWTpR .map_container___22zRx svg g foreignObject div.location___IJo0K img {
+  height: 18px;
+  vertical-align: -1px;
 }
-.plus___DWTpR .meta_container___3p0xG .type___3fXQp {
-  color: #999;
-  font-weight: 300;
+.plus___DWTpR .map_container___22zRx svg g foreignObject div.meta___3gcNx {
+  font-size: 16px;
 }
-.plus___DWTpR .meta_container___3p0xG .developer___2LQgA {
-  color: #000;
-  font-weight: 500;
-}
-.plus___DWTpR .meta_container___3p0xG .origin___3P0CR {
-  color: #999;
-  font-weight: 300;
-}
-.plus___DWTpR .meta_container___3p0xG .countries___3npf0,
-.plus___DWTpR .meta_container___3p0xG .who___1Miib {
-  color: #000;
-  font-weight: 500;
+.plus___DWTpR .map_container___22zRx svg g foreignObject div.meta___3gcNx img {
+  height: 13px;
+  vertical-align: -1px;
+  width: 25px;
 }
 .plus___DWTpR .clearfix___1yHqr {
   zoom: 1;
