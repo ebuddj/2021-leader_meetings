@@ -177,7 +177,7 @@ class App extends Component {
 
       g.append('foreignObject')
         .attr('text-anchor', 'middle')
-        .attr('width', 400)
+        .attr('width', 600)
         .attr('height', 200)
         .attr('alignment-baseline', 'central')
         .html('');
@@ -233,9 +233,9 @@ class App extends Component {
   }
   showLocationMeta() {
     g.selectAll('foreignObject')
-      .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 200)
+      .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 300)
       .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 13)
-      .html('<div class="' + style.location + '">' + coordinates[this.state.id].date2 + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
+      .html('<div class="' + style.location + '">' + coordinates[this.state.id].year + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
   }
   render() {
     return (
