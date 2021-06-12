@@ -6,7 +6,7 @@
 
 
 **Sources**
-*
+* [Wikipedia](https://en.wikipedia.org/wiki/List_of_Russia%E2%80%93United_States_summits)
 
 **EBU links**
 * 
@@ -14,7 +14,6 @@
 **Used by**
 *
 
- 
 ## How to use
 
 If you are interested in using the interactive version please contact Teemo Tebest, tebest@ebu.ch
