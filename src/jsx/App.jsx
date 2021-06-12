@@ -141,8 +141,8 @@ class App extends Component {
       g.selectAll('.centroid').data(coordinates)
         .enter().append('circle')
         .attr('class', 'centroid')
-        .attr('fill', '#555')
-        .attr('stroke', '#555')
+        .attr('fill', '#999')
+        .attr('stroke', '#999')
         .attr('stroke-width', 0)
         .attr('visibility', (d) => {
           const visible = path({type: 'Point', coordinates: [d.lng, d.lat]});
@@ -202,10 +202,10 @@ class App extends Component {
             return projection([d.lng, d.lat])[1];
           })
           .attr('fill', (d) => {
-            return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#555' 
+            return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#999' 
           })
           .attr('stroke', (d) => {
-            return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#555' 
+            return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#999' 
           });
       }).on('end', () => this.showLocationMeta());
     }
