@@ -10,7 +10,7 @@ import * as topojson from 'topojson-client';
 // https://d3js.org/
 import * as d3 from 'd3';
 
-const path_prefix = (location.href.match('localhost')) ? './' : 'https://raw.githubusercontent.com/ebuddj/2021-leader_meetings/main/public/';
+const path_prefix = (location.href.match('localhost')) ? './' : 'https://raw.githubusercontent.com/ebuddj/2021-leader_meetings/main/';
 
 let interval, g, path, features, svg;
 
