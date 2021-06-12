@@ -24,6 +24,7 @@ let coordinates = [{
   'city':'Vancouver',
   'country':'Canada',
   'date':'April 3, 1993',
+  'date2':'April 1993',
   'flag':'canada.png',
   'lat':49.2827,
   'lng':-123.1207,
@@ -34,6 +35,7 @@ let coordinates = [{
   'city':'Helsinki',
   'country':'Finland',
   'date':'March 21, 1997',
+  'date2':'March 1997',
   'flag':'finland.png',
   'lat':60.1699,
   'lng':24.9384,
@@ -44,6 +46,7 @@ let coordinates = [{
   'city':'Ljubljana',
   'country':'Slovenia',
   'date':'June 16, 2001',
+  'date2':'June 2001',
   'flag':'slovenia.png',
   'lat':46.0569,
   'lng':14.5058,
@@ -54,6 +57,7 @@ let coordinates = [{
   'city':'Bratislava',
   'country':'Slovakia',
   'date':'February 24, 2005',
+  'date2':'February 2005',
   'flag':'slovakia.png',
   'lat':48.1486,
   'lng':17.1077,
@@ -64,6 +68,7 @@ let coordinates = [{
   'city':'Prague',
   'country':'Czechia',
   'date':'April 8, 2010',
+  'date2':'April 2010',
   'flag':'czechia.png',
   'lat':50.0755,
   'lng':14.4378,
@@ -74,6 +79,7 @@ let coordinates = [{
   'city':'Helsinki',
   'country':'Finland',
   'date':'July 16, 2018',
+  'date2':'July 2018',
   'flag':'finland.png',
   'lat':60.1699,
   'lng':24.9384,
@@ -84,6 +90,7 @@ let coordinates = [{
   'city':'Geneva',
   'country':'Switzerland',
   'date':'June 16, 2021',
+  'date2':'June 2021',
   'flag':'switzerland.png',
   'lat':46.2044,
   'lng':6.1432,
@@ -170,7 +177,7 @@ class App extends Component {
 
       g.append('foreignObject')
         .attr('text-anchor', 'middle')
-        .attr('width', 350)
+        .attr('width', 400)
         .attr('height', 200)
         .attr('alignment-baseline', 'central')
         .html('');
@@ -223,9 +230,9 @@ class App extends Component {
   }
   showLocationMeta() {
     g.selectAll('foreignObject')
-      .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 175)
+      .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 200)
       .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 10)
-      .html('<div class="' + style.location + '">' + coordinates[this.state.id].year + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' and <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
+      .html('<div class="' + style.location + '">' + coordinates[this.state.id].date2 + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
   }
   render() {
     return (
