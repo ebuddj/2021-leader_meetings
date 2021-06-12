@@ -10,8 +10,7 @@ import * as topojson from 'topojson-client';
 // https://d3js.org/
 import * as d3 from 'd3';
 
-import constants from './Constants.jsx';
-import languages from './Languages.jsx';
+const path_prefix = (location.href.match('localhost')) ? './' : 'https://raw.githubusercontent.com/ebuddj/2021-leader_meetings/main/public/';
 
 let interval, g, path, features, svg;
 
@@ -22,70 +21,83 @@ let width = 800,
     tilt = 20;
 
 let coordinates = [{
-  'date':'April 3, 1993',
-  'year':'1993',
-  'president_us':'Bill Clinton',
-  'president_ru':'Boris Yeltsin',
   'city':'Vancouver',
   'country':'Canada',
+  'date':'April 3, 1993',
+  'flag':'canada.png',
   'lat':49.2827,
-  'lng':-123.1207
+  'lng':-123.1207,
+  'president_ru':'Boris Yeltsin',
+  'president_us':'Bill Clinton',
+  'year':'1993'
 },{
-  'date':'March 21, 1997',
-  'year':'1997',
-  'president_us':'George W. Bush',
-  'president_ru':'Vladimir Putin',
   'city':'Helsinki',
   'country':'Finland',
+  'date':'March 21, 1997',
+  'flag':'finland.png',
   'lat':60.1699,
-  'lng':24.9384
+  'lng':24.9384,
+  'president_ru':'Vladimir Putin',
+  'president_us':'George W. Bush',
+  'year':'1997'
 },{
-  'date':'June 16, 2001',
-  'year':'2001',
-  'president_us':'Bill Clinton',
-  'president_ru':'Boris Yeltsin',
   'city':'Ljubljana',
   'country':'Slovenia',
+  'date':'June 16, 2001',
+  'flag':'slovenia.png',
   'lat':46.0569,
-  'lng':14.5058
+  'lng':14.5058,
+  'president_ru':'Boris Yeltsin',
+  'president_us':'Bill Clinton',
+  'year':'2001'
 },{
-  'date':'February 24, 2005',
-  'year':'2005',
-  'president_us':'George W. Bush',
-  'president_ru':'Vladimir Putin',
   'city':'Bratislava',
   'country':'Slovakia',
+  'date':'February 24, 2005',
+  'flag':'slovakia.png',
   'lat':48.1486,
-  'lng':17.1077
+  'lng':17.1077,
+  'president_ru':'Vladimir Putin',
+  'president_us':'George W. Bush',
+  'year':'2005'
 },{
-  'date':'April 8, 2010',
-  'year':'2010',
-  'president_us':'Barack Obama',
-  'president_ru':'Dmitry Medvedev',
   'city':'Prague',
   'country':'Czechia',
+  'date':'April 8, 2010',
+  'flag':'czechia.png',
   'lat':50.0755,
-  'lng':14.4378
+  'lng':14.4378,
+  'president_ru':'Dmitry Medvedev',
+  'president_us':'Barack Obama',
+  'year':'2010'
 },{
-  'date':'July 16, 2018',
-  'year':'2018',
-  'president_us':'Donald Trump',
-  'president_ru':'Vladimir Putin',
   'city':'Helsinki',
   'country':'Finland',
+  'date':'July 16, 2018',
+  'flag':'finland.png',
   'lat':60.1699,
-  'lng':24.9384
-},{
-  'date':'June 16, 2021',
-  'year':'2021',
-  'president_us':'Joe Biden',
+  'lng':24.9384,
   'president_ru':'Vladimir Putin',
+  'president_us':'Donald Trump',
+  'year':'2018'
+},{
   'city':'Geneva',
   'country':'Switzerland',
+  'date':'June 16, 2021',
+  'flag':'switzerland.png',
   'lat':46.2044,
-  'lng':6.1432
+  'lng':6.1432,
+  'president_ru':'Vladimir Putin',
+  'president_us':'Joe Biden',
+  'year':'2021'
 }];
 
+let images = [];
+
+coordinates.forEach((location, i) => {
+  images[i] = new Image();
+  images[i].src = path_prefix + 'media/img/' + location.flag
+});
 
 // https://bl.ocks.org/mbostock/3757125
 // https://observablehq.com/@d3/world-tour
@@ -156,15 +168,11 @@ class App extends Component {
           return projection([d.lng, d.lat])[1];
         });
 
-      g.append('text')
+      g.append('foreignObject')
         .attr('text-anchor', 'middle')
+        .attr('width', 350)
+        .attr('height', 200)
         .attr('alignment-baseline', 'central')
-        .attr('x', (d, i) => {
-          
-        })
-        .attr('y', (d, i) => {
-          
-        })
         .html('');
 
       setInterval(() => {
@@ -182,7 +190,7 @@ class App extends Component {
   }
   changeLocation() {
     if (coordinates[this.state.id]) {
-      g.selectAll('text').html('')
+      g.selectAll('foreignObject').html('')
       p1 = p2, p2 = d3.geoCentroid(features.find((({properties}) => properties.name === coordinates[this.state.id].country)));
       r1 = r2, r2 = [-p2[0], tilt - p2[1], 0];
       const iv = Versor.interpolateAngles(r1, r2);
@@ -214,10 +222,10 @@ class App extends Component {
     }
   }
   showLocationMeta() {
-    g.selectAll('text')
-      .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0])
-      .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 5)
-      .html('<tspan style="text-transform: uppercase; font-size: 18px;" dy="1.2em "x="'+projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0]+'">' + coordinates[this.state.id].year + ': ' + coordinates[this.state.id].city + '</tspan><tspan style="font-size: 16px;" dy="1.2em "x="'+projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0]+'">' + coordinates[this.state.id].president_us + ' and ' + coordinates[this.state.id].president_ru + '</tspan>');
+    g.selectAll('foreignObject')
+      .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 175)
+      .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 10)
+      .html('<div class="' + style.location + '">' + coordinates[this.state.id].year + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' and <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
   }
   render() {
     return (
