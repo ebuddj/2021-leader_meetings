@@ -21,11 +21,156 @@ let width = 800,
     tilt = 20;
 
 let coordinates = [{
+  'city':'Geneva',
+  'country':'Switzerland',
+  'date':'November 19–21, 1985',
+  'date2':'November 1985',
+  'flag':'switzerland.png',
+  'flag_ru':'soviet_union.png',
+  'lat':46.2044,
+  'lng':6.1432,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'Ronald Reagan',
+  'year':'1985'
+},{
+  'city':'Reykjavík',
+  'country':'Iceland',
+  'date':'October 11–12, 1986',
+  'date2':'October 1986',
+  'flag':'iceland.png',
+  'flag_ru':'soviet_union.png',
+  'lat':64.1466,
+  'lng':-21.9426,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'Ronald Reagan',
+  'year':'1986'
+},{
+  'city':'Washington, D.C.',
+  'country':'United States',
+  'date':'December 8–10, 1987',
+  'date2':'December 1987',
+  'flag':'united_states.png',
+  'flag_ru':'soviet_union.png',
+  'lat':38.9072,
+  'lng':-77.0369,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'Ronald Reagan',
+  'year':'1987'
+},{
+  'city':'Moscow',
+  'country':'Russia',
+  'date':'May 29–June 3, 1988',
+  'date2':'May, June, 1988',
+  'flag':'soviet_union.png',
+  'flag_ru':'soviet_union.png',
+  'lat':55.7558,
+  'lng':37.6173,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'Ronald Reagan',
+  'year':'1988'
+},{
+  'city':'New York City',
+  'country':'United States',
+  'date':'December 7, 1988',
+  'date2':'December 1988',
+  'flag':'united_states.png',
+  'flag_ru':'soviet_union.png',
+  'lat':40.7128,
+  'lng':-74.0060,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'Ronald Reagan',
+  'year':'1988'
+},{
+  'city':'Valletta',
+  'country':'Malta',
+  'date':'December 2–3, 1989',
+  'date2':'December 1989',
+  'flag':'malta.png',
+  'flag_ru':'soviet_union.png',
+  'lat':35.8989,
+  'lng':14.5146,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1989'
+},{
+  'city':'Washington, D.C.',
+  'country':'United States',
+  'date':'May 30–June 3, 1990',
+  'date2':'May, June 1990',
+  'flag':'united_states.png',
+  'flag_ru':'soviet_union.png',
+  'lat':38.9072,
+  'lng':-77.0369,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1990'
+},{
+  'city':'Helsinki',
+  'country':'Finland',
+  'date':'September 9, 1990',
+  'date2':'September 1990',
+  'flag':'finland.png',
+  'flag_ru':'soviet_union.png',
+  'lat':60.1699,
+  'lng':24.9384,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1990'
+},{
+  'city':'Paris',
+  'country':'France',
+  'date':'November 19, 1990',
+  'date2':'November 1990',
+  'flag':'france.png',
+  'flag_ru':'soviet_union.png',
+  'lat':48.8566,
+  'lng':2.3522,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1990'
+},{
+  'city':'London',
+  'country':'United Kingdom',
+  'date':'July 17, 1991',
+  'date2':'July 1991',
+  'flag':'united_kingdom.png',
+  'flag_ru':'soviet_union.png',
+  'lat':51.5074,
+  'lng':-0.1278,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1991'
+},{
+  'city':'Moscow',
+  'country':'Soviet Union',
+  'date':'July 30–31, 1991',
+  'date2':'July 1991',
+  'flag':'soviet_union.png',
+  'flag_ru':'soviet_union.png',
+  'lat':55.7558,
+  'lng':37.6173,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1991'
+},{
+  'city':'Madrid',
+  'country':'Spain',
+  'date':'October 29–30, 1991',
+  'date2':'October 1991',
+  'flag':'spain.png',
+  'flag_ru':'soviet_union.png',
+  'lat':40.4168,
+  'lng':-3.7038,
+  'president_ru':'Mikhail Gorbachev',
+  'president_us':'George H. W. Bush',
+  'year':'1991'
+},{
   'city':'Vancouver',
   'country':'Canada',
   'date':'April 3, 1993',
   'date2':'April 1993',
   'flag':'canada.png',
+  'flag_ru':'russia.png',
   'lat':49.2827,
   'lng':-123.1207,
   'president_ru':'Boris Yeltsin',
@@ -37,6 +182,7 @@ let coordinates = [{
   'date':'March 21, 1997',
   'date2':'March 1997',
   'flag':'finland.png',
+  'flag_ru':'russia.png',
   'lat':60.1699,
   'lng':24.9384,
   'president_ru':'Boris Yeltsin',
@@ -48,6 +194,7 @@ let coordinates = [{
   'date':'June 16, 2001',
   'date2':'June 2001',
   'flag':'slovenia.png',
+  'flag_ru':'russia.png',
   'lat':46.0569,
   'lng':14.5058,
   'president_ru':'Vladimir Putin',
@@ -59,6 +206,7 @@ let coordinates = [{
   'date':'February 24, 2005',
   'date2':'February 2005',
   'flag':'slovakia.png',
+  'flag_ru':'russia.png',
   'lat':48.1486,
   'lng':17.1077,
   'president_ru':'Vladimir Putin',
@@ -70,6 +218,7 @@ let coordinates = [{
   'date':'April 8, 2010',
   'date2':'April 2010',
   'flag':'czechia.png',
+  'flag_ru':'russia.png',
   'lat':50.0755,
   'lng':14.4378,
   'president_ru':'Dmitry Medvedev',
@@ -81,6 +230,7 @@ let coordinates = [{
   'date':'July 16, 2018',
   'date2':'July 2018',
   'flag':'finland.png',
+  'flag_ru':'russia.png',
   'lat':60.1699,
   'lng':24.9384,
   'president_ru':'Vladimir Putin',
@@ -92,6 +242,7 @@ let coordinates = [{
   'date':'June 16, 2021',
   'date2':'June 2021',
   'flag':'switzerland.png',
+  'flag_ru':'russia.png',
   'lat':46.2044,
   'lng':6.1432,
   'president_ru':'Vladimir Putin',
@@ -197,8 +348,9 @@ class App extends Component {
   }
   changeLocation() {
     if (coordinates[this.state.id]) {
-      g.selectAll('foreignObject').html('')
-      p1 = p2, p2 = d3.geoCentroid(features.find((({properties}) => properties.name === coordinates[this.state.id].country)));
+      g.selectAll('foreignObject').html('');
+      // p1 = p2, p2 = d3.geoCentroid(features.find((({properties}) => properties.name === coordinates[this.state.id].country)));
+      p1 = p2, p2 = [coordinates[this.state.id].lng, coordinates[this.state.id].lat]
       r1 = r2, r2 = [-p2[0], tilt - p2[1], 0];
       const iv = Versor.interpolateAngles(r1, r2);
       
@@ -217,13 +369,13 @@ class App extends Component {
             return projection([d.lng, d.lat])[1];
           })
           .attr('r', (d) => {
-            return (d.country === coordinates[this.state.id].country) ? 10 : 6
+            return (d.city === coordinates[this.state.id].city) ? 14 : 6
           })
           .attr('fill', (d) => {
-            return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#999' 
+            return (d.city === coordinates[this.state.id].city) ? '#183d9a' : '#999' 
           })
           .attr('stroke', (d) => {
-            return (d.country === coordinates[this.state.id].country) ? '#183d9a' : '#999' 
+            return (d.city === coordinates[this.state.id].city) ? '#183d9a' : '#999' 
           });
       }).on('end', () => this.showLocationMeta());
     }
@@ -235,7 +387,7 @@ class App extends Component {
     g.selectAll('foreignObject')
       .attr('x', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[0] - 300)
       .attr('y', projection([coordinates[this.state.id].lng, coordinates[this.state.id].lat])[1] + 13)
-      .html('<div class="' + style.location + '">' + coordinates[this.state.id].year + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' <img src="' + path_prefix + 'media/img/russia.png" /> ' + coordinates[this.state.id].president_ru + '</div>');
+      .html('<div class="' + style.location + '">' + coordinates[this.state.id].year + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag + '" /> ' + coordinates[this.state.id].city + ' </div><div class="' + style.meta + '"><img src="' + path_prefix + 'media/img/united_states.png" /> ' + coordinates[this.state.id].president_us + ' <img src="' + path_prefix + 'media/img/' + coordinates[this.state.id].flag_ru + '" /> ' + coordinates[this.state.id].president_ru + '</div>');
   }
   render() {
     return (

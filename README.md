@@ -7,7 +7,8 @@
 A map showing the Russia–United States summits held from 1991 to present.
 
 **Sources**
-* [Wikipedia](https://en.wikipedia.org/wiki/List_of_Russia%E2%80%93United_States_summits)
+* [Wikipedia: List of Russia–United States summits](https://en.wikipedia.org/wiki/List_of_Russia%E2%80%93United_States_summits)
+* [Wikipedia: List of Soviet Union–United States summits](https://en.wikipedia.org/wiki/List_of_Soviet_Union%E2%80%93United_States_summits)
 
 **EBU links**
 * 
