@@ -14,7 +14,8 @@ A map showing the Russia–United States summits held from 1991 to present.
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/2f81101a05bc4c48c499a4dff0ab4718/2021_10023427)
 
 **Used by**
-*
+* RAI/Italy Rai News 24
+* RUV/Iceland on RUV HLS
 
 ## How to use
 
